@@ -99,5 +99,25 @@ between /\ splits it into two symbols.
 You need to follow the above convention when writing a grammar. You also need to handle whitespaces
 in your parser. As a hint, the token function that we learned in class can handle whitespaces.
 
-
+Detailed Steps:   
+1. Rewrite grammar G0 to G1 such that G1 enforces the intended precedence. Include G1 in your report.
+As a hint, here are some possible productions in G1:
+F ormula ::= F ormula ‘<->’ F ormula | ImpT erm
+ImpT erm ::= . . .
+. . .
+F actor ::= ‘(’ F ormula ‘)’ | ‘T’ | ‘F’ | Ident
+2. Rewrite grammar G1 to G2 such that G2 enforces right-associativity of all binary operators. Include
+G2 in your report.
+3. Reuse the code that we have learned about Parser, including the Parser definition, the parse function,
+instances of Functor, Applicative, Monad, Alternative (imported from Control.Applicative),
+basic parsing primitives, and so on.
+4. Write a parser constant :: Parser Prop (exact name) that can parse T and F.
+5. Write a parser var :: Parser Prop (exact name) that can parse variables.
+6. Write a parser formula :: Parser Prop (exact name) that can parse all possible formulas in the
+language of G2.
+7. Write a function parseFormula :: String -> String (exact name) that takes a formula string (e.g.,
+x1 /\ x2) as input and generates a string as output representing the parsing result. Specifically,
+• If the parsing succeeds and a value v of type Prop is obtained, generate the output using show v.
+• If the parsing fails, output string “Parse Error”. Note that non-exhaustive consumption of the
+input formula string should be considered as a parsing failure.
 
