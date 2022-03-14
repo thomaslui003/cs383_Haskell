@@ -4,9 +4,9 @@
 import Distribution.Simple.Utils (xargs)
 import GHC.Num
 
--- Student number: 301310026
--- Student name: Wen Luo Thomas Lui
--- CMPT 383 Homework 4
+-- Student number:
+-- Student name: Thomas Lui
+-- 383 H4
 
 --q1 simple functor 
 data ErrJst e j = Err e | Jst j deriving (Show)
