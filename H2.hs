@@ -2,9 +2,9 @@
 {-# HLINT ignore "Use foldr" #-}
 import GHC.Base (VecElem(Int16ElemRep))
 
--- Student number: 301310026
--- Student name: Wen Luo Thomas Lui
--- CMPT 383 Homework 2
+-- Student number:
+-- Student name: Thomas Lui
+-- 383 H2
 
 
 sumTailRec :: Num a => [a] -> a
