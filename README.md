@@ -78,7 +78,26 @@ data Prop = Const Bool
 deriving (Eq, Show, Read)
 
 
+As indicated by the names of data constructors, Const denotes a boolean constant, Var denotes a variable,
+Not denotes the logical not, And denotes the logical and, Or denotes the logical or, Imply denotes the logical
+implication, and Iff denotes the logical iff. For example,
 
+• T should be parsed into Const True.  
+• t should be parsed into Var "t".   
+• x1 /\ x2 should be parsed into And (Var "x1") (Var "x2"). 
+• x1 /\ x2 \/ x3 should be parsed into Or (And (Var "x1") (Var "x2")) (Var "x3"). 
+  
+Handling Whitespaces
+In general, a whitespace means a space character or a control character that is similar to a space, such as
+\t, \r, \n. The complete set of whitespace characters is defined by the isSpace function from Data.Char.
+When writing a grammar like G0, we can assume there are zero or more whitespace characters surrounding
+each symbol in the grammar. For example, “T” is a string in the language of G0. “ T ” with preceding
+and trailing whitespaces is also considered a string in the language of G0. However, we cannot assume there
+is any whitespace “inside” the symbol with quotation marks in the grammar. For example, /\ should be
+considered as one symbol as a whole. No whitespace is allowed between / and \, because adding whitespaces
+between /\ splits it into two symbols.
+You need to follow the above convention when writing a grammar. You also need to handle whitespaces
+in your parser. As a hint, the token function that we learned in class can handle whitespaces.
 
 
 
