@@ -125,18 +125,18 @@ input formula string should be considered as a parsing failure.
 
 The program must be in a form that GHC can compile. It needs to take one command-line argument
 denoting the path to the formula file. Each line of the file contains a formula string to parse, and the program
-needs to print the result of parseFormula on each string to the console. 
-Sample Input and Output 
-Suppose we have a formula file called formulas.txt that contains the following five lines: 
-T  
-t  
-x1 /\ x2  
-x1 /\ x2 \/ x3 
-/\ x1 
-After compiling, we can run the executable and get 
-$ ./p2_firstname_lastname formulas.txt 
-Const True 
-Var "t" 
-And (Var "x1") (Var "x2") 
-Or (And (Var "x1") (Var "x2")) (Var "x3") 
+needs to print the result of parseFormula on each string to the console.       
+Sample Input and Output     
+Suppose we have a formula file called formulas.txt that contains the following five lines:      
+T     
+t     
+x1 /\ x2      
+x1 /\ x2 \/ x3     
+/\ x1      
+After compiling, we can run the executable and get     
+$ ./p2_firstname_lastname formulas.txt     
+Const True    
+Var "t"    
+And (Var "x1") (Var "x2")     
+Or (And (Var "x1") (Var "x2")) (Var "x3")   
 Parse Error 
