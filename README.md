@@ -60,6 +60,23 @@ F ormula ::= ‘T’ | ‘F’ | Ident.
 | F ormula ‘->’ F ormula      
 | F ormula ‘<->’ F ormula
 
+Here, F ormula is the start symbol. T stands for the constant True, and F stands for the constant False.
+Ident denotes variable names, starting with a lower-case letter, followed by zero or more alphanumeric
+characters (letters or digits). ! denotes the logical not, /\ denotes the logical and, \/ denotes the logical or,
+-> denotes the logical implication, and <-> denotes the logical iff. The precedence of different operators
+(from high to low) is as follows: (), !, /\, \/, ->, <->. All binary operators are right-associative.
+In this assignment, you need to write a parser in Haskell to parse strings in the language of G0. Given
+such a string, the parsing result should be a value of the following type
+
+data Prop = Const Bool
+| Var String   
+| Not Prop      
+| And Prop Prop    
+| Or Prop Prop   
+| Imply Prop Prop   
+| Iff Prop Prop   
+deriving (Eq, Show, Read)
+
 
 
 
