@@ -2,9 +2,9 @@
 import Distribution.Simple.Utils (xargs)
 import Data.Time.Format.ISO8601 (yearFormat)
 
--- Student number: 301310026
--- Student name: Wen Luo Thomas Lui
--- CMPT 383 Homework 3
+-- Student number:
+-- Student name: Thomas Lui
+-- 383 H3
 
 -- to zip 2 list, used (Cons x xs) (Cons y ys) to get the x and y element and put them into a tuple and repeat with (listZip xs ys)
 data List a = Empty | Cons a (List a ) deriving (Eq, Ord, Show, Read)
