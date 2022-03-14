@@ -1,0 +1,5 @@
+(Not (Imply (Var "x1") (Imply (Var "x2") (Var "x1"))))
+(Or (Var "x1") (Var "x2"))
+(Iff (Var "x1") (Var "x2"))
+(And (Var "x1") (Not (Var "x2")))
+(Not (Imply (Var "x1") (Imply (Var "x2") (Var "x1"))))
