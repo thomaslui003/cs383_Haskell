@@ -87,7 +87,7 @@ implication, and Iff denotes the logical iff. For example,
 • x1 /\ x2 should be parsed into And (Var "x1") (Var "x2"). 
 • x1 /\ x2 \/ x3 should be parsed into Or (And (Var "x1") (Var "x2")) (Var "x3"). 
   
-Handling Whitespaces
+Handling Whitespaces:    
 In general, a whitespace means a space character or a control character that is similar to a space, such as
 \t, \r, \n. The complete set of whitespace characters is defined by the isSpace function from Data.Char.
 When writing a grammar like G0, we can assume there are zero or more whitespace characters surrounding
