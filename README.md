@@ -51,12 +51,19 @@ UNSAT
 Compile the haskell project proj_2.hs with the test file formulas.txt through ghci
 
 Consider the following grammar G0 for formulas in propositional logic
+
 F ormula ::= ‘T’ | ‘F’ | Ident
+
 | ‘(’ F ormula ‘)’
+
 | ‘!’ F ormula
+
 | F ormula ‘/\’ F ormula
+
 | F ormula ‘\/’ F ormula
+
 | F ormula ‘->’ F ormula
+
 | F ormula ‘<->’ F ormula
 
 
