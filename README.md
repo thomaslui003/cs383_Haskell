@@ -1,4 +1,4 @@
-# haskell383
+# Haskell383
 **proj_1.hs project description:**
 
 Compile the haskell project proj_1.hs with the test file test.txt through ghci
@@ -34,7 +34,7 @@ argument that denotes the path to the formula file. You can assume each line of 
 to check, and the program needs to print to the console telling whether each formula is satisfiable (print
 SAT) or not (print UNSAT).
 
-Sample Input and Output
+Sample Input and Output:
 Suppose we have a formula file called formulas.txt that contains the following two lines:
 (And (Var "x1") (Not (Var "x2")))
 (Not (Imply (Var "x1") (Imply (Var "x2") (Var "x1"))))
@@ -47,4 +47,13 @@ UNSAT
 
 
 **proj_2.hs project description:**
+
 Compile the haskell project proj_2.hs with the test file formulas.txt through ghci
+
+
+
+
+
+
+
+
