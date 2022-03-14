@@ -1,6 +1,6 @@
--- Student number: 301310026
--- Student name: Wen Luo Thomas Lui
--- CMPT 383 Homework 1
+-- Student number: 
+-- Student name: Thomas Lui
+-- 383 H1
 
 seqMultiple :: Integral a => a -> a -> [Bool]
 seqMultiple n b = [  (i `mod` b) == 0 | i <- [1..n] ]
