@@ -1,6 +1,8 @@
 # Haskell383
 **proj_1.hs project description:**
-**Didn't implement the function to take in Const True or False else everything work as intended.
+
+
+Didn't implement the function to take in Const True or False else everything work as intended.
 
 Compile the haskell project proj_1.hs with the test file test.txt through ghci
 
