@@ -1,5 +1,5 @@
 # Haskell383
-**proj_1.hs project description:**
+**project_1.hs project description:**
 
   **Didn't implement the function to take in Const True or False else everything work as intended.**
 
@@ -49,7 +49,7 @@ UNSAT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-**proj_2.hs project description:**
+**project_2.hs project description:**
 
 Compile the haskell project proj_2.hs with the test file formulas.txt through ghci
 
